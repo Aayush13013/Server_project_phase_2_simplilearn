@@ -1,0 +1,80 @@
+import java.io.*;
+import java.util.*;
+public class File_Handling {
+
+	public static void main(String[] args) throws IOException
+	{
+		File f1 = new File("E:\\IS training\\server dev\\project\\projectSubmission\\fileIO_project\\File_IO\\My_dir\\name1.txt");
+//		f1.createNewFile();
+//		System.out.println("is exist : " + f1.exists());
+//		System.out.println("file size : " + f1.length());
+//		System.out.println("can read : " + f1.canRead());
+//		System.out.println("can write : " + f1.canWrite());
+//		System.out.println("name of the file : " + f1.getName());
+		
+		System.out.println("\r\n"
+				+ " __       __  ________  __         ______    ______   __       __  ________        ________   ______                                                    \r\n"
+				+ "/  |  _  /  |/        |/  |       /      \\  /      \\ /  \\     /  |/        |      /        | /      \\                                                   \r\n"
+				+ "$$ | / \\ $$ |$$$$$$$$/ $$ |      /$$$$$$  |/$$$$$$  |$$  \\   /$$ |$$$$$$$$/       $$$$$$$$/ /$$$$$$  |                                                  \r\n"
+				+ "$$ |/$  \\$$ |$$ |__    $$ |      $$ |  $$/ $$ |  $$ |$$$  \\ /$$$ |$$ |__             $$ |   $$ |  $$ |                                                  \r\n"
+				+ "$$ /$$$  $$ |$$    |   $$ |      $$ |      $$ |  $$ |$$$$  /$$$$ |$$    |            $$ |   $$ |  $$ |                                                  \r\n"
+				+ "$$ $$/$$ $$ |$$$$$/    $$ |      $$ |   __ $$ |  $$ |$$ $$ $$/$$ |$$$$$/             $$ |   $$ |  $$ |                                                  \r\n"
+				+ "$$$$/  $$$$ |$$ |_____ $$ |_____ $$ \\__/  |$$ \\__$$ |$$ |$$$/ $$ |$$ |_____          $$ |   $$ \\__$$ |                                                  \r\n"
+				+ "$$$/    $$$ |$$       |$$       |$$    $$/ $$    $$/ $$ | $/  $$ |$$       |         $$ |   $$    $$/                                                   \r\n"
+				+ "$$/      $$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/   $$$$$$/  $$/      $$/ $$$$$$$$/          $$/     $$$$$$/                                                    \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "  ______    ______   __      __  __    __   ______   __    __  __   ______         _______   _______    ______      _____  ________   ______   ________ \r\n"
+				+ " /      \\  /      \\ /  \\    /  |/  |  /  | /      \\ /  |  /  |/  | /      \\       /       \\ /       \\  /      \\    /     |/        | /      \\ /        |\r\n"
+				+ "/$$$$$$  |/$$$$$$  |$$  \\  /$$/ $$ |  $$ |/$$$$$$  |$$ |  $$ |$$/ /$$$$$$  |      $$$$$$$  |$$$$$$$  |/$$$$$$  |   $$$$$ |$$$$$$$$/ /$$$$$$  |$$$$$$$$/ \r\n"
+				+ "$$ |__$$ |$$ |__$$ | $$  \\/$$/  $$ |  $$ |$$ \\__$$/ $$ |__$$ |$/  $$ \\__$$/       $$ |__$$ |$$ |__$$ |$$ |  $$ |      $$ |$$ |__    $$ |  $$/    $$ |   \r\n"
+				+ "$$    $$ |$$    $$ |  $$  $$/   $$ |  $$ |$$      \\ $$    $$ |    $$      \\       $$    $$/ $$    $$< $$ |  $$ | __   $$ |$$    |   $$ |         $$ |   \r\n"
+				+ "$$$$$$$$ |$$$$$$$$ |   $$$$/    $$ |  $$ | $$$$$$  |$$$$$$$$ |     $$$$$$  |      $$$$$$$/  $$$$$$$  |$$ |  $$ |/  |  $$ |$$$$$/    $$ |   __    $$ |   \r\n"
+				+ "$$ |  $$ |$$ |  $$ |    $$ |    $$ \\__$$ |/  \\__$$ |$$ |  $$ |    /  \\__$$ |      $$ |      $$ |  $$ |$$ \\__$$ |$$ \\__$$ |$$ |_____ $$ \\__/  |   $$ |   \r\n"
+				+ "$$ |  $$ |$$ |  $$ |    $$ |    $$    $$/ $$    $$/ $$ |  $$ |    $$    $$/       $$ |      $$ |  $$ |$$    $$/ $$    $$/ $$       |$$    $$/    $$ |   \r\n"
+				+ "$$/   $$/ $$/   $$/     $$/      $$$$$$/   $$$$$$/  $$/   $$/      $$$$$$/        $$/       $$/   $$/  $$$$$$/   $$$$$$/  $$$$$$$$/  $$$$$$/     $$/    \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "                                                                                                                                                        \r\n"
+				+ "");
+		
+		
+		
+		
+		System.out.println("Developer : Aayush Soni\nCompany : Infostretch Pvt. Ltd.\nProjectName : File_IO project\n");
+		
+		int user_input=2,user_input2=1;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter a number from below to choose respective option\n"
+				+ "\n1 : Retrieve the files in ascending order of there names"
+				+ "\n2 : Operations to perform\n");
+		if (user_input==1) {
+			System.out.println("user wants to retrieve the files in ascending order of there names");
+		}
+		else if (user_input==2) {
+			System.out.println("user wants to do some operations on the files ");
+			switch (user_input2) {
+			case 1:
+				System.out.println("add files here");
+				break;
+            case 2:
+				System.out.println("delete files here");
+				break;
+            case 3:
+            	System.out.println("search files here");
+	            break;
+
+			default:
+				System.out.println("invalid input");
+				break;
+			}
+		}
+		
+		else {
+			System.out.println("invalid input from your side");
+		}
+		
+	}
+
+}
